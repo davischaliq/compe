@@ -1,0 +1,9 @@
+{
+    "name": "davdc/perumpfn",
+    "description": "movie funding",
+    "type": "project",
+    "license": "GPL",
+    "require": {
+        "veritrans/veritrans-php": "^1.2"
+    }
+}

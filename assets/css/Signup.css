@@ -1,0 +1,61 @@
+/* signup style */
+.form_popup {
+	width: 570px;
+	margin: 0 auto;
+	padding: 70px 0 40px 0;
+	background-color: #fff;
+}
+.form_popup.opened {
+	display: block;
+}
+.form_popup::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#signup_form .chekbox-lg ul li {
+	display: inline-block;
+	margin-right: 33px;
+}
+#signup_form .chekbox-lg ul li:last-child {
+	margin-right: 0;
+}
+#signup_form .checkmark {
+	width: 20px;
+	height: 20px;
+}
+#signup_form input[type="radio"]:checked ~ .checkmark {
+	background-color: #1c1b1b;
+}
+#signup_form input[type="radio"]:checked ~ .checkmark:before {
+	opacity: 1;
+	visibility: visible;
+	content: '';
+}
+#signup_form input[type="radio"]:checked ~ .checkmark + span {
+	color: #1c1b1b;
+}
+
+.form-text {
+	text-align: center;
+	margin-top: -3px;
+	padding-bottom: 64px;
+}
+.form-text p {
+	padding: 0 10px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 21px;
+}
+.form-text p a {
+	display: inline-block;
+	color: #4a90e2;
+}
+/* Optional: show position indicator in red */
+.form_popup::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.form_popup input[type="checkbox"]:checked ~ .checkmark:before {
+	font-family: inherit;
+	content: '';
+}
