@@ -50,6 +50,7 @@ if (isset($_POST['submit'])) {
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
      <link rel="stylesheet" href="<?= BASEURL; ?>assets/css/about.css">
      <link rel="stylesheet" href="<?= BASEURL; ?>assets/css/responsive.css">
+     <link rel="icon" type="image/png" href="<?= BASEURL ?>assets/img/custome-logo.png">
      <title>News</title>
    </head>
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark" style="background-color: #1f2833;">

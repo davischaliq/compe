@@ -55,6 +55,7 @@ if (isset($_SESSION['user'])) {
     <meta name="keywords" content="marketing,digital marketing,creative, agency, startup,promodise,onepage, clean, modern,seo,business, company">
     <meta name="author" content="Themefisher.com">
       <?php while ($result = mysqli_fetch_assoc($cekk)) {?>
+        <link rel="icon" type="image/png" href="<?= BASEURL ?>assets/img/custome-logo.png">
    <title><?= $result['judul']; ?></title>
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">

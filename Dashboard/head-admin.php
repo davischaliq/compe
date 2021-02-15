@@ -19,6 +19,7 @@ if (isset($_SESSION['user'])) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="<?= BASEURL ?>assets/img/custome-logo.png">
     <title>Dashboard</title>
 
     <!-- Pemanggilan Bootstrap -->
