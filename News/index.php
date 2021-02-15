@@ -6,14 +6,10 @@ require_once '../app/init.php';
 if (isset($_POST['submit'])) {
   if ($_POST['key'] != null) {
     // code...
-    $key = $_POST['key'];
-    // var_dump($key);
-    $key = htmlspecialchars($key);
+    $key = htmlspecialchars($_POST['key']);
+    // $key = $key);
     $key = mysqli_escape_string($conn, $key);
-    $qr = "SELECT * FROM news WHERE
-    judul LIKE '%$key%' OR
-    content LIKE '%$key%'
-    ";
+    $qr = "SELECT * FROM news WHERE judul LIKE '%$key%' OR content LIKE '%$key%'";
     $Oncoming = mysqli_query($conn, $qr);
   }
 }else {
@@ -29,13 +25,15 @@ if (isset($_POST['submit'])) {
       require_once '../app/errorpage.php';
       return false;
     }else {
-      $halamanaktif = $_GET['P_'];
+      $halamanaktif = htmlspecialchars($_GET['P_']);
     }
   }else {
     // code...
     $halamanaktif = 1;
   }
   $awaldata = ( $jumlahperhalaman * $halamanaktif ) - $jumlahperhalaman;
+  $jumlahperhalaman = mysqli_escape_string($conn, $jumlahperhalaman);
+  $awaldata = mysqli_escape_string($conn, $awaldata);
 
   $qrOncoming = "SELECT * FROM news ORDER BY id DESC LIMIT $awaldata, $jumlahperhalaman";
   $Oncoming = mysqli_query($conn, $qrOncoming);
@@ -80,10 +78,10 @@ if (isset($_POST['submit'])) {
    </div>
      <!--MAIN BANNER AREA START -->
    <div class="card bg-dark text-white text-center">
-     <img src="<?= BASEURL; ?>assets/img/banner.jpg" class="img-fluid" alt="Responsive image" style="opacity: 0.7;">
+     <img src="<?= BASEURL; ?>assets/img/banner1.jpg" class="img-fluid" alt="Responsive image" style="opacity: 0.7;">
      <div class="card-img-overlay mt-5">
        <h1 class="card-title text-white mt-5">News</h1>
-       <p class="card-text" style="font-size: 15px;">Selamat Datang, Untuk anda yang ingin mengetahui event dan berita terbaru di pfn anda bisa cek di halaman ini.</p>
+       <p class="card-text" style="font-size: 15px;">Selamat Datang, Untuk anda yang ingin mengetahui event dan berita terbaru di DavDc Production anda bisa cek di halaman ini.</p>
      </div>
    </div>
    <!--MAIN HEADER AREA END -->

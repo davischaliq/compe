@@ -43,7 +43,7 @@ if (isset($_GET['Set_One'])) {
  </head>
  <body>
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark" style="background-color: #1f2833;">
-     <a class="navbar-brand my-0 mr-md-auto" href="#">
+     <a class="navbar-brand my-0 mr-md-auto" href="<?= BASEURL; ?>">
        <img src="<?= BASEURL; ?>assets/img/custome-logo.png" width="120" height="65" class="d-inline-block align-top" alt="" loading="lazy">
            </a>
            <nav class="my-2 my-md-0 mr-md-3">

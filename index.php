@@ -18,7 +18,7 @@ $MovieR = mysqli_query($conn, $qrMovie);
      <meta name="keywords" content="marketing,digital marketing,creative, agency, startup,promodise,onepage, clean, modern,seo,business, company">
      <meta name="author" content="Themefisher.com">
 
-    <title>Perum Produksi Film Negara</title>
+    <title>DavDc Production</title>
      <!-- bootstrap.min css -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
      <!-- custome css -->
@@ -26,7 +26,7 @@ $MovieR = mysqli_query($conn, $qrMovie);
  </head>
  <body>
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark" style="background-color: #1f2833;">
-     <a class="navbar-brand my-0 mr-md-auto" href="#">
+     <a class="navbar-brand my-0 mr-md-auto" href="<?= BASEURL; ?>">
        <img src="<?= BASEURL; ?>assets/img/custome-logo.png" width="120" height="65" class="d-inline-block align-top" alt="" loading="lazy">
            </a>
          <nav class="my-2 my-md-0 mr-md-3">
@@ -60,23 +60,24 @@ $MovieR = mysqli_query($conn, $qrMovie);
     <div class="carousel-item active">
       <img src="<?= BASEURL; ?>assets/img/endgame.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Perum Produksi Film Negara</h5>
+          <h5>DavDc Production</h5>
             <p>Selamat Datang Di Website Kami</p>
+            <p>Kami Hadir Untuk Mewujudkan Ide Creative Anda Menjadi Sebuah Film.</p>
           </div>
         </div>
       <div class="carousel-item">
     <img src="<?= BASEURL; ?>assets/img/Jumanji2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
+      <!-- <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      </div> -->
     </div>
       <div class="carousel-item">
         <img src="<?= BASEURL; ?>assets/img/The-counjuring.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <!-- <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
+        </div> -->
       </div>
     </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -181,9 +182,7 @@ $MovieR = mysqli_query($conn, $qrMovie);
       </div>
         <div class="col-lg-6 narasi float-right">
           <h3>Punya Ide tapi gak punya biaya bikin film ?</h3>
-            <p>Kota Agra, India akan menjadi saksi pernikahan Sinta (Lala Karmela) dan Vikash (Sahil Shah) yang tinggal menghitung hari. Namun Sinta dikejutkan dengan Ibunya, Widhi Malthora (Cut Mini) yang tiba-tiba menghilang. Sinta pun melakukan berbagai cara untuk mengetahui keberadaan ibunya sementara keluarga Vikash mendesak agar pernikahan segera dilaksanakan.
-             Usut punya usut, Widhi ternyata kembali ke kampung halamannya di Indonesia setelah menerima telpon dari Dimas (Dian Sidik), adik semata wayangnya. Widhi mendapat kabar bahwa sang ayah telah meninggal tiga bulan yang lalu. Mendengar informasi tersebut, Sinta kaget bukan main. Selama ini ia mendengar dari mulut ibunya bahwa ibunya sudah tidak punya keluarga lagi di Jawa. Sinta pun nekat untuk menyusul kepergian Ibunya dengan seribu pertanyaan dan menunda pernikahannya di India.
-             Sesampainya di Desa Borobudur, kampung halaman Widi, betapa terkejutnya Sinta, ketika mendapati kenyataan tentang akar jati dirinya dan rahasia kelam masa lalu Ibunya, ternyata tak seindah yang ia bayangkan selama ini. Kenyataan ini mengubah hidup Sinta selamanya.</p>
+            <p>Untuk Kalian yang mempunyai ide creative untuk membuat film bisa coba untuk mengajukan ide anda di kepada kami jika ide anda bagus dan layak untuk di jadikan sebuah film kami akan membantu anda untuk mewujudkan ide anda menjadi sebuah film dengan berkerja sama dengan kami dan juga dengan company lain yang dapat mewujudkan ide anda menjadi sebuah dilm yang dapat mendidik dan menghibur masyarakat semua.</p>
         <!-- <button type="button" class="btn btn-outline-info">See more</button> -->
         </div>
       </div>
